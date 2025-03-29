@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Wardrobe App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌦 Seasonal Wardrobe Organizer</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="showWeather()">Get Weather</button>
+        
+        <div id="weather-info">
+            <h2>🌍 Weather Information</h2>
+            <div id="weather-icon"></div>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="condition"></p>
+        </div>
+
+        <div class="wardrobe-container">
+            <h2>👗 Wardrobe Suggestions</h2>
+            <div class="gender-selection">
+                <button onclick="updateWardrobe('male')">👔 Male</button>
+                <button onclick="updateWardrobe('female')">👗 Female</button>
+            </div>
+            <div id="wardrobe-icon"></div>
+            <p id="wardrobe-suggestion"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
